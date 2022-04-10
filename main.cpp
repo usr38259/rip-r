@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
 		} else break;
 		if (mode == 'd' && f_r) {
 			printf ("Error: can't decompress with reverse bit order\n");
-			throw 2;
+			throw 1;
 		}
 
 		if (a >= argc) {
